@@ -2,6 +2,6 @@
 
 public class AppArguments
 {
-    [CommandLine.Option('p', "port", Required = true, HelpText = "Specifies the port the server will listen to.")]
-    public ushort ListeningPort { get; set; }
+    [CommandLine.Option('p', "port", HelpText = "Specifies the port the server will listen to.")]
+    public ushort ListeningPort { get; set; } = 3808;
 }
